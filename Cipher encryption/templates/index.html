@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cipher Encryption Tool</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛡️ Cipher Encryption Tool 🛡️</h1>
+    <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+    <div class="controls">
+      <label for="shiftValue">Shift Value:</label>
+      <input type="number" id="shiftValue" min="0" max="25" value="0">
+    </div>
+    <div class="buttons">
+      <button onclick="encryptText()">Encrypt</button>
+      <button onclick="decryptText()">Decrypt</button>
+      <button onclick="clearText()">Clear</button>
+    </div>
+    <textarea id="outputText" placeholder="Result will appear here..." readonly></textarea>
+  </div>
+  <script src="/static/scripts.js"></script>
+</body>
+</html>
